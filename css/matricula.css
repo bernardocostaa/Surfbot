@@ -1,0 +1,133 @@
+
+.titulo-matricula{
+  text-align: center;
+  padding: 30px 0px;
+}
+.matricula{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 80px;
+}
+
+.inf-pessoal{
+  display: flex;
+  width: 500px;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.form-matricula label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-matricula input {
+  background-color: var(--cor-cC1);
+  border: none;
+}
+.form-matricula input[type="text"] {
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form-matricula input:focus {
+  outline: 0;
+  background: white;
+  box-shadow: 0 0 0 2px var(--cor-a1);
+}
+.input-mesma-linha{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.opcao-forma{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+.escolha-plano{
+  padding: 30px;
+  
+}
+
+.texto-radio {
+  display: flex;
+  align-self: center;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.texto-radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #1188EE;
+}
+
+
+.texto-radio input[type="radio"]:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.texto-radio input[type="radio"]:checked ~ .checkmark:after {
+  display: block;
+}
+
+.texto-radio .checkmark:after {
+ 	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.opcao-forma-2::before{
+  content: '';
+  background: #EFF4F9;
+  position: absolute;
+  width: 2px;
+  height: 60px;
+}
+.opcao-forma-3::before{
+  content: '';
+  background: #EFF4F9;
+  position: absolute;
+  width: 2px;
+  height: 60px;
+}
+.formas{
+  display: grid;
+  margin-bottom: 30px;
+  grid-template-columns: repeat(3,1fr);
+  background: white;
+  border-radius: 8px;
+}
+.teste{
+  padding: 15px;
+}
+.texto-radio input[type="radio"]:checked > .opcao-forma-2 {
+  background-color: #445566;
+}

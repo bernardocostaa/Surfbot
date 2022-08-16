@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,19 +12,111 @@
   <link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <title>Matricula</title>
 </head>
+
 <body>
- <header>
-  <div class="menu-princ">
-    <div class="conteiner config-menu">
-      <a href="index.html"><img src="surfbot-logo.svg" alt=""></a>
-      <ul class="cor-w font-botao-menu-18">
-        <li><a href="#">Praia</a></li>
-        <li><a href="#">Aulas</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="matricula.html">Matricule-se</a></li>
-      </ul>
+  <header>
+    <div class="menu-princ">
+      <div class="conteiner config-menu">
+        <a href="index.html"><img src="surfbot-logo.svg" alt=""></a>
+        <ul class="cor-w font-botao-menu-18">
+          <li><a href="#">Praia</a></li>
+          <li><a href="#">Aulas</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="matricula.html">Matricule-se</a></li>
+        </ul>
+      </div>
     </div>
+  </header>
+  <h1 class="font-titulo titulo-matricula bg-aulas cor-cE2">Matricule-se</h1>
+  <div class="conteiner ">
+    <form action="" class="matricula form-matricula" >
+      <div class="inf-pessoal">
+        <div>
+          <label class="font-botao-menu-18 cor-cE2" for="">Nome</label>
+          <input type="text">
+        </div>
+        <div>
+          <label class="font-botao-menu-18 cor-cE2" for="">Email</label>
+          <input type="text">
+        </div>
+        <div>
+          <label class="font-botao-menu-18 cor-cE2" for="">CPF</label>
+          <input type="text">
+        </div>
+        <div class="input-mesma-linha">
+          <div>
+            <label class="font-botao-menu-18 cor-cE2" for="">Endereço</label>
+            <input type="text">
+          </div>
+          <div>
+            <label class="font-botao-menu-18 cor-cE2" for="">Estado</label>
+            <input type="text">
+          </div>
+        </div>
+        <div class="input-mesma-linha">
+          <div>
+            <label class="font-botao-menu-18 cor-cE2" for="">CEP</label>
+            <input type="text">
+          </div>
+          <div>
+            <label class="font-botao-menu-18 cor-cE2" for="">Cidade</label>
+            <input type="text">
+          </div>
+        </div>
+      </div>
+      <div class="bg-aulas escolha-plano">
+        <h3 class="font-botao-menu-18">Escolha o Plano</h3>
+      <div class="formas">
+        <div class="opcao-forma-1">
+          <div class="teste">
+            <label class="texto-radio font-botao-menu-18">Infantil
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="opcao-forma-2">
+         <div class="teste">
+           <label class="texto-radio font-botao-menu-18">Adulto
+             <input type="radio" name="radio">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+        </div>
+         <div class="opcao-forma-3">
+         <div class="teste">
+           <label class="texto-radio font-botao-menu-18">Profissional
+             <input type="radio" name="radio">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+        </div>
+      </div>
+        
+            
+         
+       
+        <div class="plano">
+          <div class="aulas-preco">
+            <div class="pranchas">
+              <img class="prancha" src="icones/surfbot-icon.svg" alt="">
+              <img class="prancha" src="icones/surfbot-icon.svg" alt="">
+            </div>
+            <h3 class="cor-cE2 font-nunuto-24">ADULTO</h3>
+            <ul class="infos-de-planos font-nunuto-14 cor-cE2">
+              <li>Público entre 16 e 80 anos</li>
+              <li>Equipamentos fornecidos</li>
+              <li>Horários de Sex. à Sab</li>
+              <li>3 horas seguidas de aula</li>
+            </ul>
+            <div class="info-compra">
+              <span class="cor-a2 font-nunuto-14 bold">R$ 69,00 / Aula</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
- </header>
 </body>
+
 </html>
