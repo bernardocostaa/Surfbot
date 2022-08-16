@@ -67,3 +67,7 @@ img{
 .botao-segundario:hover:after {
   transform: translateX(6px);
 }
+
+.d-none{
+  display: none;
+}
