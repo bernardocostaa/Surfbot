@@ -33,52 +33,62 @@
       <div class="inf-pessoal">
         <div>
           <label class="font-botao-menu-18 cor-cE2" for="">Nome</label>
-          <input type="text">
+          <input class="font-botao-menu-18" type="text">
         </div>
         <div>
           <label class="font-botao-menu-18 cor-cE2" for="">Email</label>
-          <input type="text">
+          <input class="font-botao-menu-18" type="text">
         </div>
         <div>
           <label class="font-botao-menu-18 cor-cE2" for="">CPF</label>
-          <input type="text">
+          <input class="font-botao-menu-18" type="text" placeholder="111.111.111-01">
         </div>
         <div class="input-mesma-linha">
           <div>
             <label class="font-botao-menu-18 cor-cE2" for="">Endereço</label>
-            <input type="text">
+            <input class="font-botao-menu-18" type="text" placeholder="Rua, Número e Bairro">
           </div>
           <div>
             <label class="font-botao-menu-18 cor-cE2" for="">Estado</label>
-            <input type="text">
+            <select class="font-botao-menu-18 cor-cE2 classic">
+              <option value="">Selecione o Estado</option>
+              <option value="0">Rio de Janeiro</option>
+              <option value="1">São Paulo</option>
+              <option value="2">Minas Gerais</option>
+            </select>
           </div>
         </div>
         <div class="input-mesma-linha">
           <div>
             <label class="font-botao-menu-18 cor-cE2" for="">CEP</label>
-            <input type="text">
+            <input class="font-botao-menu-18" type="text" placeholder="22.222-000">
           </div>
           <div>
             <label class="font-botao-menu-18 cor-cE2" for="">Cidade</label>
-            <input type="text">
+            <select class="font-botao-menu-18 cor-cE2 classic" value="">
+              <option class="porra" value="">Selecione a Cidade</option>
+              <option value="">Rio de Janeiro</option>
+              <option value="">São Paulo</option>
+              <option  value="">Minas Gerais</option>
+            </select>
           </div>
         </div>
         <div class="pagamento">
-          <span class="cor-a2 font-nunuto-14 bold">Forma de Pagamento</span>
-          <div class="formas">
+          <span class="cor-a2 font-botao-menu-18">Forma de Pagamento</span>
+          <div class="formas-pagamento">
             <div class="opcao-forma-1">
-              <div class="teste">
+              <div class="teste bg-pagamento">
                 <label class="texto-radio font-botao-menu-18 cor-cE2">
                   <input type="radio" checked="checked" name="radio">
                   <span>Cartão de Crédito</span>
                 </label>
               </div>
             </div>
-            <div class="opcao-forma-1">
-              <div class="teste">
+            <div class="opcao-forma1">
+              <div class="teste bg-pagamento">
                 <label class="texto-radio font-botao-menu-18  cor-cE2">
                   <input type="radio" checked="checked" name="radio">
-                  Infantil
+                  Boleto Bancário
                 </label>
               </div>
             </div>
@@ -86,24 +96,44 @@
           <div class="input-mesma-linha">
             <div>
               <label class="font-botao-menu-18 cor-cE2" for="">Nome no Cartão</label>
-              <input type="text">
+              <input class="font-botao-menu-18" type="text" placeholder="Nome impresso no cartão">
             </div>
             <div>
               <label class="font-botao-menu-18 cor-cE2" for="">Data de Expiração</label>
               <div class="ano-mes">
-                <input type="text">
-                <input type="text">
+                <select class="font-botao-menu-18 cor-cE2 classic" name="" id="" >
+                  <option value="" selected>Mês</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                  <option value="">7</option>
+                  <option value="">8</option>
+                  <option value="">9</option>
+                  <option value="">10</option>
+                  <option value="">11</option>
+                  <option value="">12</option>
+                </select>
+                <select class="font-botao-menu-18 cor-cE2 classic" name="" id="" placeholder="Mês">
+                  <option value="" selected>Ano</option>
+                  <option value="">2022</option>
+                  <option value="">2023</option>
+                  <option value="">2024</option>
+                  <option value="">2025</option>
+                </select>
               </div>
             </div>
           </div>
           <div class="input-mesma-linha">
             <div>
               <label class="font-botao-menu-18 cor-cE2" for="">Número do Cartão</label>
-              <input type="text">
+              <input class="font-botao-menu-18" type="text" placeholder="5555 5555 5555 5555">
             </div>
             <div>
               <label class="font-botao-menu-18 cor-cE2" for="">Código de Segurança</label>
-              <input type="text">
+              <input class="font-botao-menu-18" type="text" placeholder="XXX">
             </div>
           </div>
         </div>
@@ -123,7 +153,7 @@
             <div class="opcao-forma-1">
               <div class="teste">
                 <label class="texto-radio font-botao-menu-18  cor-cE2">
-                  <input type="radio" checked="checked" name="radio">
+                  <input type="radio" checked="checked" name="plano">
                   Infantil
                 </label>
               </div>
@@ -131,7 +161,7 @@
             <div class="opcao-forma-2">
               <div class="teste">
                 <label class="texto-radio font-botao-menu-18  cor-cE2">
-                  <input type="radio" name="radio">
+                  <input type="radio" name="plano">
                   Adulto
                 </label>
               </div>
