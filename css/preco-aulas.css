@@ -37,6 +37,7 @@
 .info-compra{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .aulas-preco ul{
@@ -46,6 +47,7 @@
 
 .aulas-preco span{
   margin-bottom: 50px;
+  font-size: 18px;
 }
 
 .aulas-preco li::before{
@@ -160,8 +162,7 @@
 }
 .infos-de-planos{
   display: grid;
-  justify-items: center;
-}
 
 }
 
+}

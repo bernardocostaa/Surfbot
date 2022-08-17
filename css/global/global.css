@@ -50,6 +50,20 @@ img{
 
 
 }
+.botao-matricula{
+  color: white;
+  background-color: #1188EE;
+  padding: 8px 8px 8px 8px;    
+  border-radius: 4px;
+  max-width: max-content;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.botao-matricula:hover{
+  background-color: #0d71c9;
+  transition: .2s;
+}
 .botao-segundario:hover{
   background-color: var(--cor-cE3);
   transition: .2s;

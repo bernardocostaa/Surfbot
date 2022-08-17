@@ -29,7 +29,7 @@
   </header>
   <h1 class="font-titulo titulo-matricula bg-aulas cor-cE2">Matricule-se</h1>
   <div class="conteiner ">
-    <form action="" class="matricula form-matricula" >
+    <form action="" class="matricula form-matricula">
       <div class="inf-pessoal">
         <div>
           <label class="font-botao-menu-18 cor-cE2" for="">Nome</label>
@@ -63,55 +63,117 @@
             <input type="text">
           </div>
         </div>
-      </div>
-      <div class="bg-aulas escolha-plano">
-        <h3 class="font-botao-menu-18">Escolha o Plano</h3>
-      <div class="formas">
-        <div class="opcao-forma-1">
-          <div class="teste">
-            <label class="texto-radio font-botao-menu-18">
-              <input type="radio" checked="checked" name="radio">
-              Infantil
-            </label>
+        <div class="pagamento">
+          <span class="cor-a2 font-nunuto-14 bold">Forma de Pagamento</span>
+          <div class="formas">
+            <div class="opcao-forma-1">
+              <div class="teste">
+                <label class="texto-radio font-botao-menu-18 cor-cE2">
+                  <input type="radio" checked="checked" name="radio">
+                  <span>Cartão de Crédito</span>
+                </label>
+              </div>
+            </div>
+            <div class="opcao-forma-1">
+              <div class="teste">
+                <label class="texto-radio font-botao-menu-18  cor-cE2">
+                  <input type="radio" checked="checked" name="radio">
+                  Infantil
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="input-mesma-linha">
+            <div>
+              <label class="font-botao-menu-18 cor-cE2" for="">Nome no Cartão</label>
+              <input type="text">
+            </div>
+            <div>
+              <label class="font-botao-menu-18 cor-cE2" for="">Data de Expiração</label>
+              <div class="ano-mes">
+                <input type="text">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <div class="input-mesma-linha">
+            <div>
+              <label class="font-botao-menu-18 cor-cE2" for="">Número do Cartão</label>
+              <input type="text">
+            </div>
+            <div>
+              <label class="font-botao-menu-18 cor-cE2" for="">Código de Segurança</label>
+              <input type="text">
+            </div>
           </div>
         </div>
-        <div class="opcao-forma-2">
-         <div class="teste">
-           <label class="texto-radio font-botao-menu-18">
-             <input type="radio" name="radio">
-             Adulto
-           </label>
-         </div>
-        </div>
-         <div class="opcao-forma-3">
-         <div class="teste">
-           <label class="texto-radio font-botao-menu-18">
-             <input type="radio" name="radio">
-             Profissional
-           </label>
-         </div>
+        <div class="finalizar">
+          <span class="font-nunuto-18 cor-cE2 margin-bt">Seu cartão será debitado em R$ 49,00</span>
+          <a class="botao-matricula font-botao-menu-18 margin-bt" href="matricula.html">REALIZAR MATRÍCULA</a>
+          <div class="aviso-seguranca margin-bt">
+            <img src="fotos/cadeado.svg" alt="">
+            <span class="font-nunuto-14 cor-cE2">Informações seguras e criptografadas</span>
+          </div>
         </div>
       </div>
-        <div class="plano-matricula">
-          <div class="aulas-preco">
-            <div class="pranchas">
-              <img class="prancha" src="icones/surfbot-icon.svg" alt="">
+      <div class="">
+        <div class="bg-aulas escolha-plano">
+          <h3 class="font-botao-menu-18">Escolha o Plano</h3>
+          <div class="formas">
+            <div class="opcao-forma-1">
+              <div class="teste">
+                <label class="texto-radio font-botao-menu-18  cor-cE2">
+                  <input type="radio" checked="checked" name="radio">
+                  Infantil
+                </label>
+              </div>
             </div>
-            <h3 class="cor-cE2 font-nunuto-24">INFANTIL</h3>
-            <ul class="infos-de-planos font-nunuto-14 cor-cE2">
-              <li>Público entre 5 e 15 anos</li>
-              <li>Equipamentos fornecidos</li>
-              <li>Horários de Sex. à Sab</li>
-              <li>2 horas seguidas de aula</li>
-            </ul>
-            <div class="info-compra">
-              <span class="cor-a2 font-nunuto-14 bold">R$ 69,00 / Aula</span>
+            <div class="opcao-forma-2">
+              <div class="teste">
+                <label class="texto-radio font-botao-menu-18  cor-cE2">
+                  <input type="radio" name="radio">
+                  Adulto
+                </label>
+              </div>
+            </div>
+            <div class="opcao-forma-3">
+              <div class="teste">
+                <label class="texto-radio font-botao-menu-18  cor-cE2">
+                  <input type="radio" name="radio">
+                  Profissional
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="plano-matricula">
+            <div class="aulas-preco">
+              <div class="pranchas">
+                <img class="prancha" src="icones/surfbot-icon.svg" alt="">
+              </div>
+              <h3 class="cor-cE2 font-nunuto-24">INFANTIL</h3>
+              <div class="alinhar-centro">
+                <ul class="infos-de-planos font-nunuto-14 cor-cE2">
+                  <li>Público entre 5 e 15 anos</li>
+                  <li>Equipamentos fornecidos</li>
+                  <li>Horários de Sex. à Sab</li>
+                  <li>2 horas seguidas de aula</li>
+                </ul>
+              </div>
+              <div class="info-compra">
+                <span class="cor-a2 font-nunuto-14 bold">R$ 69,00 / Aula</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </form>
   </div>
+  <footer class="bg-color-footer">
+    <div class="conteiner footer-flex">
+      <p class="font-botao-menu-18 cor-w">Surfnet 2017 - Alguns direitos reseervados...</p>
+      <img src="icones/pranca-branca.svg" alt="">
+    </div>
+  </footer>
 </body>
 
 </html>
