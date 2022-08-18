@@ -48,6 +48,7 @@
 .input-mesma-linha{
   display: grid;
   gap: 20px;
+  margin-bottom: 15px;
   grid-template-columns: 1fr 1fr;
 }
 .opcao-forma{
@@ -183,4 +184,13 @@ select.classic {
 .bg-pagamento{
   background:#EFF4F9 ;
   border-radius: 5px;
+}
+
+@media(max-width:950px){
+  .matricula {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 40px 20px;
+  }
 }
