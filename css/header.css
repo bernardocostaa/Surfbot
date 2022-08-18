@@ -34,7 +34,7 @@
   color: white;
   padding-left: 10px;
   padding-right: 10px;
-  width: 170px;
+  width: 200px;
   align-items: center;
 }
 
@@ -87,7 +87,7 @@
 }
 .botao-header{
   font-size: 12px;
-  width: 120px;
+  width: 145px;
   padding-left: 12px;
   padding-right: 8px;
 }
@@ -98,7 +98,7 @@
 @media (max-width:400px){
   .botao-header{
     font-size: 11px;
-    width: 95px;
+    width: 110px;
     padding-left: 12px;
     padding-right: 0px;
   }
