@@ -126,7 +126,7 @@ input[type="radio"]:checked::before {
   border-right: 3px solid #EFF4F9 ;
   border-left: 3px solid #EFF4F9;
 }
-.opcao-forma-1{
+.opcao-forma-1-compra{
   border-right: 3px solid #EFF4F9 ;
 }
 .escolha-plano span{
@@ -191,6 +191,23 @@ select.classic {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    padding: 40px 20px;
+  }
+  .input-mesma-linha{
+    grid-template-columns: 1fr;  
+  }
+  .formas{
+    grid-template-columns: 1fr;
+  }
+  .opcao-forma-2{
+    border-top: 5px solid #EFF4F9 ;
+    border-bottom: 5px solid #EFF4F9;
+    border-right: none ;
+    border-left: none;
+  }
+  .opcao-forma-1{
+    border-right: none ;
+  }
+  .formas-pagamento{
+    flex-direction: column;
   }
 }
