@@ -1,0 +1,87 @@
+.menu-mobile{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition:all .6s ease;
+  display: none;
+}
+.menu-mobile.ativo{
+  transform: rotate(-90deg);
+
+}
+
+
+@media(max-width:800px){
+  .menu-mobile{
+    display: block;
+  }
+  .config-menu ul{
+    position: fixed;
+    background-color: var(--cor-cE3);
+    top: 100px;
+    right: -100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 0 0;
+    transition: .6s;
+    padding-bottom: 12px;
+}
+.config-menu li{
+  padding: 12px 0;
+}
+.config-menu li:nth-last-child(n+2)::after{
+  content: '';
+  height: 4px;
+  display: inline-block;
+  position: relative;
+  width: 4px;
+  border-radius: 50%;
+  border: 2px solid white;
+  left: 20px;
+}
+.config-menu li:nth-last-child(n+2)::before{
+  content: '';
+  height: 4px;
+  display: inline-block;
+  position: relative;
+  width: 4px;
+  border-radius: 50%;
+  border: 2px solid white;
+  right: 20px;
+}
+  .config-menu li:nth-child(4)::before{
+  content: '';
+  height: 4px;
+  display: inline-block;
+  position: relative;
+  width: 4px;
+  border-radius: 50%;
+  border: 2px solid var(--cor-v2);
+  right: 20px;
+  background-color: transparent;
+  }
+  .config-menu li:nth-child(4)::after{
+    content: '';
+    height: 4px;
+    display: inline-block;
+    position: relative;
+    width: 4px;
+    border-radius: 50%;
+    border: 2px solid var(--cor-v2);
+    left: 20px;
+  }
+  .config-menu ul.ativar{
+    position: absolute;
+    right: 0;
+  }
+
+  .config-menu a{
+    font-size: 16px;
+    
+   }
+
+
+  }
+

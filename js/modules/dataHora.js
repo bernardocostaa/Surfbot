@@ -17,9 +17,8 @@ if(semanaAberto && horarioAberto){
   funcionamento.classList.add('aberto')
 }
 
-
- console.log(semanaAberto);
- console.log(horarioAberto);
+//  console.log(semanaAberto);
+//  console.log(horarioAberto);
 
 };
 
