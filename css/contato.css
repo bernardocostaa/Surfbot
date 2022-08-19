@@ -103,8 +103,12 @@
   width: 10px;
   height: 10px;
   left: -15px;
-  background: #16c70b;
+  background: red;
   border-radius: 50%;
+}
+.funcionamento.aberto::before{
+  background: #16c70b;
+
 }
 .bg-icones {
   position: relative;
