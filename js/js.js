@@ -3,11 +3,6 @@ import menuMobile from './modules/menu-mobile.js';
 
 
 
-
-
-
-
-
-dataHora()
 menuMobile()
+dataHora()
 
