@@ -51,6 +51,9 @@
   background-color: var(--cor-v2);
   bottom: 0px;
 }
+.config-menu li:nth-child(4)::after{
+  display: none;
+}
 
 @media(max-width:700px){
   .config-menu a{
