@@ -24,6 +24,9 @@
   background-color: var(--cor-cC1);
   border: none;
 }
+.form-contato input.erro , .form-contato textarea.erro{
+  border:2px solid var(--cor-v2);
+}
 .form-contato input[type="text"] {
   padding: 12px;
   border-radius: 4px;
@@ -124,6 +127,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.liCertoMensagem{
+  font-size: 20px;
+  color: rgb(6, 136, 6);
+}
+
+.liErroMensagem{
+  font-size: 20px;
+  color: var(--cor-v2);
 }
 
 @media (max-width: 950px) {
