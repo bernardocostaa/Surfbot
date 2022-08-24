@@ -32,47 +32,47 @@
     <h1 class="font-titulo titulo-matricula bg-aulas cor-cE2">Matricule-se</h1>
   </header>
   <div class="conteiner ">
-    <form action="" class="matricula form-matricula">
+    <form action="" class="matricula form-matricula" onsubmit="validarMatricula(event)">
       <div class="inf-pessoal">
         <div>
           <label class="font-botao-menu-18 cor-cE2" for="">Nome</label>
-          <input class="font-botao-menu-18" type="text">
+          <input class="font-botao-menu-18" type="text" id="nome">
         </div>
         <div>
           <label class="font-botao-menu-18 cor-cE2" for="">Email</label>
-          <input class="font-botao-menu-18" type="text">
+          <input class="font-botao-menu-18" type="text" id="email">
         </div>
         <div>
           <label class="font-botao-menu-18 cor-cE2" for="">CPF</label>
-          <input class="font-botao-menu-18" type="text" placeholder="111.111.111-01">
+          <input class="font-botao-menu-18" type="text" placeholder="111.111.111-01" id="cpf">
         </div>
         <div class="input-mesma-linha">
           <div>
             <label class="font-botao-menu-18 cor-cE2" for="">Endereço</label>
-            <input class="font-botao-menu-18" type="text" placeholder="Rua, Número e Bairro">
+            <input class="font-botao-menu-18" type="text" placeholder="Rua, Número e Bairro" id="endereco">
           </div>
           <div>
             <label class="font-botao-menu-18 cor-cE2" for="">Estado</label>
-            <select class="font-botao-menu-18 cor-cE2 classic">
-              <option value="" disabled selected>Selecione o Estado</option>
-              <option value="0">Rio de Janeiro</option>
-              <option value="1">São Paulo</option>
-              <option value="2">Minas Gerais</option>
+            <select class="font-botao-menu-18 cor-cE2 classic" id="estado">
+              <option value="0" disabled selected>Selecione o Estado</option>
+              <option value="1">Rio de Janeiro</option>
+              <option value="2">São Paulo</option>
+              <option value="3">Minas Gerais</option>
             </select>
           </div>
         </div>
         <div class="input-mesma-linha">
           <div>
             <label class="font-botao-menu-18 cor-cE2" for="">CEP</label>
-            <input class="font-botao-menu-18" type="text" placeholder="22.222-000">
+            <input class="font-botao-menu-18" type="text" placeholder="22.222-000" id="cep">
           </div>
           <div>
             <label class="font-botao-menu-18 cor-cE2" for="">Cidade</label>
-            <select class="font-botao-menu-18 cor-cE2 classic" value="">
-              <option value="" selected disabled>Selecione a Cidade</option>
-              <option value="">Rio de Janeiro</option>
-              <option value="">São Paulo</option>
-              <option  value="">Minas Gerais</option>
+            <select class="font-botao-menu-18 cor-cE2 classic" id="cidade">
+              <option value="0" selected disabled>Selecione a Cidade</option>
+              <option value="1">Rio de Janeiro</option>
+              <option value="2">São Paulo</option>
+              <option value="3">Minas Gerais</option>
             </select>
           </div>
         </div>
@@ -142,7 +142,7 @@
         </div>
         <div class="finalizar">
           <span class="font-nunuto-18 cor-cE2 margin-bt">Seu cartão será debitado em R$ 49,00</span>
-          <a class="botao-matricula font-botao-menu-18 margin-bt" href="matricula.html">REALIZAR MATRÍCULA</a>
+          <button class="botao-matricula font-botao-menu-18 margin-bt">REALIZAR MATRÍCULA</button>
           <div class="aviso-seguranca margin-bt">
             <img src="fotos/cadeado.svg" alt="">
             <span class="font-nunuto-14 cor-cE2">Informações seguras e criptografadas</span>
@@ -208,5 +208,6 @@
     </div>
   </footer>
   <script type="module" src="js/js.js"></script>
+  <script src="js/validarMatricula.js"></script>
 </body>
 </html>
