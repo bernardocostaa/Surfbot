@@ -231,5 +231,8 @@ select.classic {
   .msg-boleto{
     text-align: center;
   }
+  .ajuste-menu{
+    top: 65px !important;
+  }
   
 }
