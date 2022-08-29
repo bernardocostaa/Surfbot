@@ -85,6 +85,7 @@
   grid-template-columns: 1em auto;
   gap: 0.5em;
   padding: 12px;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
 }
@@ -180,12 +181,26 @@ select.classic {
     2.5em 2.5em;
   background-repeat: no-repeat;
 }
-
+.selecionado{
+  background-color: #BBCCDD;
+}
+.tamanho-data{
+  min-width: 100px;
+}
 .bg-pagamento{
   background:#EFF4F9 ;
   border-radius: 5px;
 }
 
+.form-matricula input.erro ,.form-matricula select.erro{
+  box-shadow: 0 0 0 2px var(--cor-v2);
+  
+}
+.inputErrado{
+  font-size: 20px;
+  color: var(--cor-v2);
+  margin-top: 5px;
+}
 @media(max-width:950px){
   .matricula {
     display: grid;
@@ -209,5 +224,11 @@ select.classic {
   }
   .formas-pagamento{
     flex-direction: column;
+  }
+  .finalizar{
+    align-items: center;
+  }
+  .msg-boleto{
+    text-align: center;
   }
 }

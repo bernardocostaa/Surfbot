@@ -24,7 +24,7 @@
           <li><a href="#">Contato</a></li>
           <li><a href="matricula.html">Matricule-se</a></li>
         </ul>
-        <button class="menu-mobile" >
+        <button class="menu-mobile">
           <img src="icones/pranca-branca.svg" alt="">
         </button>
       </nav>
@@ -64,7 +64,7 @@
         <div class="input-mesma-linha">
           <div>
             <label class="font-botao-menu-18 cor-cE2" for="">CEP</label>
-            <input class="font-botao-menu-18" type="text" placeholder="22.222-000" id="cep">
+            <input class="font-botao-menu-18" type="text" placeholder="22222-000" id="cep">
           </div>
           <div>
             <label class="font-botao-menu-18 cor-cE2" for="">Cidade</label>
@@ -81,63 +81,72 @@
           <div class="formas-pagamento">
             <div class="opcao-forma-1-compra">
               <div class="teste bg-pagamento">
-                <label class="texto-radio font-botao-menu-18 cor-cE2">
-                  <input type="radio" checked="checked" name="radio">
+                <label class="texto-radio font-botao-menu-18 cor-cE2 selecionado cartao-credito">
+                  <input id="cartao" type="radio" checked="checked" name="pagamento" onclick="formaPagamento()">
                   <span>Cartão de Crédito</span>
                 </label>
               </div>
             </div>
             <div class="opcao-forma1">
               <div class="teste bg-pagamento">
-                <label class="texto-radio font-botao-menu-18  cor-cE2">
-                  <input type="radio" checked="checked" name="radio">
+                <label class="texto-radio font-botao-menu-18 cor-cE2 boleto">
+                  <input id="boleto" type="radio" name="pagamento" onclick="formaPagamento()">
                   Boleto Bancário
                 </label>
               </div>
             </div>
           </div>
-          <div class="input-mesma-linha">
-            <div>
-              <label class="font-botao-menu-18 cor-cE2" for="">Nome no Cartão</label>
-              <input class="font-botao-menu-18" type="text" placeholder="Nome impresso no cartão">
+          <div class="cartao-credito-campo">
+            <div class="input-mesma-linha">
+              <div>
+                <label class="font-botao-menu-18 cor-cE2" for="">Nome no Cartão</label>
+                <input class="font-botao-menu-18" type="text" placeholder="Nome impresso no cartão">
+              </div>
+              <div>
+                <label class="font-botao-menu-18 cor-cE2" for="">Data de Expiração</label>
+                <div class="ano-mes">
+                  <div class="tamanho-data">
+                    <select class="font-botao-menu-18 cor-cE2 classic" name="" id="">
+                      <option value="0" selected disabled>Mês</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                  </div>
+                  <div class="tamanho-data">
+                    <select class="font-botao-menu-18 cor-cE2 classic" name="" id="" placeholder="Mês">
+                      <option value="0" selected disabled>Ano</option>
+                      <option value="1">2022</option>
+                      <option value="2">2023</option>
+                      <option value="3">2024</option>
+                      <option value="4">2025</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <label class="font-botao-menu-18 cor-cE2" for="">Data de Expiração</label>
-              <div class="ano-mes">
-                <select class="font-botao-menu-18 cor-cE2 classic" name="" id="" >
-                  <option value="" selected disabled>Mês</option>
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
-                  <option value="">5</option>
-                  <option value="">6</option>
-                  <option value="">7</option>
-                  <option value="">8</option>
-                  <option value="">9</option>
-                  <option value="">10</option>
-                  <option value="">11</option>
-                  <option value="">12</option>
-                </select>
-                <select class="font-botao-menu-18 cor-cE2 classic" name="" id="" placeholder="Mês">
-                  <option value="" selected disabled>Ano</option>
-                  <option value="">2022</option>
-                  <option value="">2023</option>
-                  <option value="">2024</option>
-                  <option value="">2025</option>
-                </select>
+            <div class="input-mesma-linha">
+              <div>
+                <label class="font-botao-menu-18 cor-cE2" for="">Número do Cartão</label>
+                <input class="font-botao-menu-18" type="text" placeholder="5555 5555 5555 5555">
+              </div>
+              <div>
+                <label class="font-botao-menu-18 cor-cE2" for="">Código de Segurança</label>
+                <input class="font-botao-menu-18" type="text" placeholder="XXX">
               </div>
             </div>
           </div>
-          <div class="input-mesma-linha">
-            <div>
-              <label class="font-botao-menu-18 cor-cE2" for="">Número do Cartão</label>
-              <input class="font-botao-menu-18" type="text" placeholder="5555 5555 5555 5555">
-            </div>
-            <div>
-              <label class="font-botao-menu-18 cor-cE2" for="">Código de Segurança</label>
-              <input class="font-botao-menu-18" type="text" placeholder="XXX">
-            </div>
+          <div class="boleto-msg d-none">
+            <h2 class="cor-cE2 font-nunuto-24 msg-boleto">NO MOMENTO NÃO ESTAMOS ACEITANDO BOLETO!!</h2>
           </div>
         </div>
         <div class="finalizar">
@@ -153,10 +162,10 @@
         <div class="bg-aulas escolha-plano">
           <h3 class="font-botao-menu-18">Escolha o Plano</h3>
           <div class="formas">
-            <div class="opcao-forma-1 gap-entre">
+            <div class="opcao-forma-1 gap-entre selecionado">
               <div class="teste">
-                <label class="texto-radio font-botao-menu-18  cor-cE2">
-                  <input type="radio" checked="checked" name="tipo">
+                <label class="texto-radio font-botao-menu-18 cor-cE2">
+                  <input id="infa" type="radio" checked="checked" name="tipo" onclick="selecionePlano()">
                   Infantil
                 </label>
               </div>
@@ -164,7 +173,7 @@
             <div class="opcao-forma-2 gap-entre">
               <div class="teste">
                 <label class="texto-radio font-botao-menu-18  cor-cE2">
-                  <input type="radio" name="tipo">
+                  <input id="adult" type="radio" name="tipo" onclick="selecionePlano()">
                   Adulto
                 </label>
               </div>
@@ -172,14 +181,14 @@
             <div class="opcao-forma-3 gap-entre">
               <div class="teste">
                 <label class="texto-radio font-botao-menu-18  cor-cE2">
-                  <input type="radio" name="tipo">
+                  <input id="prof" type="radio" name="tipo" onclick="selecionePlano()">
                   Profissional
                 </label>
               </div>
             </div>
           </div>
           <div class="plano-matricula">
-            <div class="aulas-preco">
+            <div class="aulas-preco plano1">
               <div class="pranchas">
                 <img class="prancha" src="icones/surfbot-icon.svg" alt="">
               </div>
@@ -190,6 +199,43 @@
                   <li>Equipamentos fornecidos</li>
                   <li>Horários de Sex. à Sab</li>
                   <li>2 horas seguidas de aula</li>
+                </ul>
+              </div>
+              <div class="info-compra">
+                <span class="cor-a2 font-nunuto-14 bold">R$ 69,00 / Aula</span>
+              </div>
+            </div>
+            <div class="aulas-preco plano2 d-none">
+              <div class="pranchas">
+                <img class="prancha" src="icones/surfbot-icon.svg" alt="">
+                <img class="prancha" src="icones/surfbot-icon.svg" alt="">
+              </div>
+              <h3 class="cor-cE2 font-nunuto-24">ADULTO</h3>
+              <div class="alinhar-centro">
+                <ul class="infos-de-planos font-nunuto-14 cor-cE2">
+                  <li>Público entre 16 e 80 anos</li>
+                  <li>Equipamentos fornecidos</li>
+                  <li>Horários de Sex. à Sab</li>
+                  <li>3 horas seguidas de aula</li>
+                </ul>
+              </div>
+              <div class="info-compra">
+                <span class="cor-a2 font-nunuto-14 bold">R$ 69,00 / Aula</span>
+              </div>
+            </div>
+            <div class="aulas-preco plano3 d-none">
+              <div class="pranchas">
+                <img class="prancha" src="icones/surfbot-icon.svg" alt="">
+                <img class="prancha" src="icones/surfbot-icon.svg" alt="">
+                <img class="prancha" src="icones/surfbot-icon.svg" alt="">
+              </div>
+              <h3 class="cor-cE2 font-nunuto-24">PROFISSIONAL</h3>
+              <div class="alinhar-centro">
+                <ul class="infos-de-planos font-nunuto-14 cor-cE2">
+                  <li>Experiência de 3 anos no surf</li>
+                  <li>Você deve trazer o equipamento</li>
+                  <li>Horários de Sex. à Sab</li>
+                  <li>4 horas seguidas de aula</li>
                 </ul>
               </div>
               <div class="info-compra">
@@ -210,4 +256,5 @@
   <script type="module" src="js/js.js"></script>
   <script src="js/validarMatricula.js"></script>
 </body>
+
 </html>

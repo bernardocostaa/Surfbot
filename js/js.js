@@ -5,6 +5,6 @@ import validarContato from './modules/validarContato.js';
 
 
 
+menuMobile();
 dataHora();
 validarContato();
-menuMobile();
