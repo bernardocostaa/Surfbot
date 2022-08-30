@@ -92,6 +92,10 @@ function validarMatricula(e){
 
  }
 
+ if(!valido){
+  window.open('resposta.html', '_blank')
+ }
+
 }
 
 
@@ -172,5 +176,3 @@ function enterCartao(){
   numberCartao.value = numberCartao.value.replace(/(\d{4})(\d)/,"$1 $2")  
   numberCartao.value = numberCartao.value.replace(/(\d{4})(\d)/,"$1 $2")  
 }
-
-numberCartao.addEventListener('touchmove',enterCartao)
