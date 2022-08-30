@@ -234,6 +234,9 @@ select.classic {
   .ajuste-menu{
     top: 65px !important;
   }
+  .total h1{
+    font-size: 18px;
+  }
   
 }
 
