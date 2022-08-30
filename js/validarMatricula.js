@@ -1,3 +1,5 @@
+
+
 function validarMatricula(e){
   e.preventDefault();
 
@@ -17,7 +19,8 @@ function validarMatricula(e){
     email.classList.add("erro")
     valido = true
   }
-  if(cpf.value.length != 11){
+  
+  if(cpf.value.length != 14){
     cpf.classList.add("erro")
     mostrarMensagem(cpf ,'CPF incorreto')
     valido = true
@@ -32,7 +35,7 @@ function validarMatricula(e){
     estado.classList.add("erro")
     valido = true
   }
-  if(cep.value.length != 8){
+  if(cep.value.length != 9){
     mostrarMensagem(cep ,'Erro no cep')
     cep.classList.add("erro")
     valido = true
@@ -58,7 +61,7 @@ function validarMatricula(e){
   validadeAno.classList.add("erro")
   valido = true
  }
- if(numeroCartao.value.length != 16 && cartao.checked){
+ if(numeroCartao.value.length != 19 && cartao.checked){
   mostrarMensagem(numeroCartao ,'Erro, numero do cartao invalido')
   numeroCartao.classList.add("erro")
   valido = true
@@ -143,4 +146,29 @@ function selecionePlano(){
     document.querySelector('.plano3').classList.remove('d-none')
   }
   
+}
+
+function enterCpf(){
+  let cpf = document.querySelector('#cpf')
+  cpf.value = cpf.value.replace(/\D/g,"")        
+  cpf.value = cpf.value.replace(/(\d{3})(\d)/,"$1.$2")     
+  cpf.value = cpf.value.replace(/(\d{3})(\d)/,"$1.$2")    
+  cpf.value = cpf.value.replace(/(\d{3})(\d{1,2})$/,"$1-$2")   
+}
+function enterCep(){
+  let cep = document.querySelector('#cep')
+  cep.value = cep.value.replace(/\D/g,"")
+  cep.value = cep.value.replace(/^(\d{5})(\d)/,"$1-$2")
+}
+function enterSeguranca(){
+  let codSeguranca = document.querySelector('#codseguranca')
+  codSeguranca.value = codSeguranca.value.replace(/\D/g,"")
+}
+function enterCartao(){
+  let numberCartao = document.querySelector('#numberCartao')
+  numberCartao.value = numberCartao.value.replace(/\D/g,"")
+  numberCartao.value = numberCartao.value.replace(/(\d{4})(\d)/,"$1 $2")  
+  numberCartao.value = numberCartao.value.replace(/(\d{4})(\d)/,"$1 $2")  
+  numberCartao.value = numberCartao.value.replace(/(\d{4})(\d)/,"$1 $2")  
+  numberCartao.value = numberCartao.value.replace(/(\d{4})(\d)/,"$1 $2")  
 }
