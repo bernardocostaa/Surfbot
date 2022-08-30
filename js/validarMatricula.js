@@ -93,7 +93,7 @@ function validarMatricula(e){
  }
 
  if(!valido){
-  window.open('resposta.html', '_blank')
+  window.open('resp.html', '_blank')
  }
 
 }
