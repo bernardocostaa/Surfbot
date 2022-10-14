@@ -94,6 +94,7 @@ function validarMatricula(e){
 
  if(!valido){
   window.open('resp.html', '_blank')
+  // window.location.href = 'http://127.0.0.1:5501/resp.html'
  }
 
 }
